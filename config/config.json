@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "employee-data-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/employeeData/EmployeeDataWebPart.js",
+          "manifest": "./src/webparts/employeeData/EmployeeDataWebPart.manifest.json"
+        }
+      ]
+    },
+    "training-request-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/trainingRequest/TrainingRequestWebPart.js",
+          "manifest": "./src/webparts/trainingRequest/TrainingRequestWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EmployeeDataWebPartStrings": "lib/webparts/employeeData/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "TrainingRequestWebPartStrings": "lib/webparts/trainingRequest/loc/{locale}.js"
+  }
+}
